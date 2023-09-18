@@ -1,0 +1,97 @@
+@charset "UTF-8";
+@font-face {
+    font-family: "billion";
+    src: url(../fontes/BillionDreams_PERSONAL.ttf) format(truetype);
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    box-sizing: border-box;
+}
+header{
+    color: white;
+    font-family: "billion";
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: -2px 4px 10px 0px rgb(142, 142, 142);
+    background-image: linear-gradient(to bottom, #adadad, #6e6e6e, #515151);
+    
+}
+#logo{
+    font-size: 40px;
+    padding: 10px;
+    display: block;
+    text-shadow: -6px 1px 20px #f1a6ad;
+    
+}
+
+body{
+    background-color: rgb(255, 255, 255);
+}
+.nav-bar{
+    float: left;
+    position: absolute;
+    top: 10px;
+}
+#butt-bar{
+    background-color: rgb(255, 255, 255);
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 10px;
+}
+.drop-pai{
+    position: relative;
+    display: inline-block;
+}
+.drop-pai a{
+    color: black;
+    display:block;
+    text-decoration: none;
+    
+}
+.drop-filho{
+    position: absolute;
+    display: none;
+    
+}
+.drop-pai:hover .drop-filho{
+    display: block;
+    background-color: white;
+    color: black;
+    
+    
+}
+section{
+    height: 400px;
+    
+}
+form{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    align-items: flex-end;
+    padding: 30px;
+    padding-bottom: 70px;
+    box-shadow: -6px 8px 15px 0px rgba(57, 57, 57, 0.395);
+    background-image: url(../imagens/backg-imag.png);
+    
+}
+.formulario{
+    border: 1px solid rgb(175, 174, 174);
+    margin:20%;
+    border-radius: 10px ;
+    
+}
+aside{
+    background-color: rgba(211, 211, 211, 0.488);
+    height: 100px;
+    text-align: center;
+    padding: 10px;
+}
+footer{
+    background-color: lightgray;
+    height: 30px;
+    text-align: center;
+}
