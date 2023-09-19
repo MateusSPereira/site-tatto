@@ -23,6 +23,7 @@ header{
     padding: 10px;
     display: block;
     text-shadow: -6px 1px 20px #f1a6ad;
+    text-decoration: none;
     
 }
 
@@ -40,6 +41,10 @@ body{
     padding: 10px;
     border-radius: 10px;
 }
+#butt-bar:hover{
+    background-color: rgba(1, 131, 36, 0.523);
+    color: rgb(0, 0, 0);
+}
 .drop-pai{
     position: relative;
     display: inline-block;
@@ -50,6 +55,12 @@ body{
     text-decoration: none;
     
 }
+.drop-pai a:hover{
+    background-color: #515151;
+    transition: 1s;
+    border-radius: 5px;
+    color: white;
+}
 .drop-filho{
     position: absolute;
     display: none;
@@ -59,11 +70,14 @@ body{
     display: block;
     background-color: white;
     color: black;
+    font-size: 30px;
+    border-radius: 10px;
+    
     
     
 }
 section{
-    height: 400px;
+    height: 500px;
     
 }
 form{
@@ -77,6 +91,7 @@ form{
     box-shadow: -6px 8px 15px 0px rgba(57, 57, 57, 0.395);
     background-image: url(../imagens/backg-imag.png);
     
+    
 }
 .formulario{
     border: 1px solid rgb(175, 174, 174);
@@ -84,11 +99,40 @@ form{
     border-radius: 10px ;
     
 }
+#email, #senha{
+    margin-bottom: 10px;
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    padding: 3px;
+}
+#email:focus, #senha:focus{
+    background-color: rgb(255, 255, 255);
+    color: black;
+    
+}
+#login{
+    background-image: linear-gradient(to bottom, transparent, white, lightgray);
+    font-family: "billion";
+    font-size: 20px;
+    text-decoration: none;
+    
+}
+
 aside{
     background-color: rgba(211, 211, 211, 0.488);
     height: 100px;
-    text-align: center;
     padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+aside a{
+    text-decoration: none;
+    color: red;
+}
+aside a:hover{
+    text-decoration: underline;
 }
 footer{
     background-color: lightgray;
