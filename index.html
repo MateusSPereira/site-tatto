@@ -3,91 +3,68 @@
 <html lang="pt">
 
     <head>
-
         <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-     <title>tatto isaac</title>
+        <title>tatto isaac</title>
 
-     <link rel="shortcut icon" href="" type="image/x-icon">
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-     <link rel="stylesheet" href="Css/style.css">
-     <script src="https://kit.fontawesome.com/9eeabd2549.js" crossorigin="anonymous"></script>
-
+        <link rel="shortcut icon" href="" type="image/x-icon">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="stylesheet" href="Css/style.css">
+        <script src="https://kit.fontawesome.com/9eeabd2549.js" crossorigin="anonymous"></script>
+        <script src="script.js"></script>
     </head>
 
     <body>
-
         <header>
-
-            <h1 id="logo">TALUH-ART</h1>
-
-            <nav>
-                <div class="nav-bar">
-                    <div class="dropdown">
-
-                        <div class="drop-pai">
-
-                            <button id="butt-bar"><i class="fa-solid fa-bars"></i></button>
-
-                        <div class="drop-filho">
-                            <ul>
-                                <li>
-                                    <a href="#">Inicio</a>
-                                </li>
-                                <li>
-                                    <a href="#">Artes</a>
-                                </li>
-                                <li>
-                                    <a href="#">Agenda</a>
-                                </li>
-                                <li>
-                                    <a href="#">Contatos</a>
-                                </li>
-                            </ul>
-                        </div>
-                        
-                    </div>
-                    
-                </div>
-                
-            </nav>
-         
+            <h1 id="logo">Talu-Art</h1>
         </header>
 
-        <main>
+        <nav class="nav">
+            <ul class="nav-bar">
+                <li><a href="#" class="menu">Home</a></li>
+                <li><a href="#" class="menu">Artes</a></li>
+                <li><a href="#" class="menu">Contatos</a></li>
+            </ul>
+        </nav>
 
-            <section>
+        <section>
+            <h2>Algumas inspirações de tatto</h2>
 
-                <div class="formulario">
-                    <form>
-                        
-                        <input type="email" value="Email" id="email">
-                        <input type="password" value="Senha" id="senha">
-                        <input type="submit" value="Login" id="login">
+            <div class="gallery">
+                <img src="imagens/imag1-200.jpg" alt="" id="img1" width="150px">
+                <img src="imagens/imag3-200.jpg" alt="" id="img2" width="150px">
+                <img src="imagens/imag4-200.jpg" alt="" id="img3" width="150px">
+                <img src="imagens/anime.imagem.png" alt="" width="150px" id="img4">
+            </div>
+        </section>
 
-                    </form>
+        <div class="agenda">
+            <div class="dropdown">
+                <div class="dropdown-pai">
+                    <button onclick="agenda()" id="drp-button">AGENDA</button>
+                    <div class="dropdown-filho">
+                        <p>Novembro</p>
+                        <p>Dezembro</p>
+                        <p>Janeiro</p>
+                    </div>
                 </div>
+                
+            </div>
+        </div>
 
-            </section>
+        <aside>
+           <p id="aside-txt"><i class="fa-solid fa-house"></i>Atendimento a domicílio mediante à pagamento de 50% prévio na hora da marcação</p>
+           <p><i class="fa-solid fa-location-dot"></i>Estudio: Rua Duarte Pacheco Pereira N°36, 2°DTO</p>
 
-            <aside>
+        </aside>
 
-                <a href="#">Sobre nos</a>
-                <a href="#">Inicio</a>
-                <a href="#">Fale conosco</a>
-
-            </aside>
-
-            <footer>
-
-            <p>created by Mateus Pereira</p>
-
-            </footer>
-
-            
-        
-        </main>
+        <footer>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-whatsapp"></i>
+            <i class="fab fa-twitter"></i>
+            <p>created by <i style="text-decoration: underline;">Mateus Pereira</i></p>
+        </footer>
 
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
