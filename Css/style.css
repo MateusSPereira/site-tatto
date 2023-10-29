@@ -39,7 +39,7 @@ nav a{
     text-decoration: none;
     margin-left: 40px;
     font-size: 20px;  
-    
+    letter-spacing: 3px;
 }
 nav a:hover{
     background-color: brown;
@@ -70,7 +70,11 @@ section{
 }
 aside{
     text-align: center;
-    margin-top: 200px;
+    margin-top: 400px;
+    background-color: lightgrey;
+    margin-bottom: 0px;
+    padding-bottom: 10px;
+    height: 100px;
 }
 .agenda{
     margin: 50px 10px;
@@ -80,20 +84,32 @@ aside{
     position: absolute;
     display: block;
     padding: 5px;
+    top: 50%;
+    left: 45%;
 }
 .dropdown-filho{
     position: relative;
     display: none;
+    right: 250px;
+    
 }
 .dropdown-pai:hover> .dropdown-filho{
     display: block;
-
     position: absolute;
+   
+    
 }
 #drp-button{
     padding: 5px;
+    position: relative;
+    
 }
-
+.container{
+    width: 200px;
+    color: rgb(73, 33, 33);
+    margin-top: 20px;
+    
+}
 
 
 
@@ -124,10 +140,12 @@ aside{
 
 
 footer{
-    background-color: lightgray;
+    background-color: rgb(40, 40, 40);
     text-align: center;
-    padding-top: 10px;
+    padding-top: 20px;
     padding-bottom: 5px;
+    color: white;
+    margin-top:0px ;
 }
 .fa-twitter{
     color: rgb(0, 123, 255);
